@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Future Consultant — Sky Square & GVR-1 | Bahria Town Lahore</title>
+<meta name="description" content="Invest in Sky Square Apartments & GVR-1 Commercial Plots in Bahria Town Lahore. Trusted by Overseas Pakistanis worldwide. Future Consultant — Best Property Professionals.">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Plus Jakarta Sans', sans-serif; background: #0a0a0a; color: white; }
+
+/* NAV */
+nav {
+  background: rgba(10,10,10,0.95);
+  backdrop-filter: blur(10px);
+  padding: 0 20px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(200,150,12,0.3);
+}
+.logo { display: flex; align-items: center; gap: 10px; }
+.logo-icon {
+  width: 40px; height: 40px;
+  background: linear-gradient(135deg, #c8960c, #f0b429);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem; font-weight: 900; color: white;
+}
+.logo-text { font-size: 1rem; font-weight: 800; }
+.logo-text span { color: #f0b429; }
+.nav-contact {
+  background: linear-gradient(135deg, #c8960c, #f0b429);
+  border: none; border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 0.82rem; font-weight: 700;
+  cursor: pointer; font-family: inherit; color: white;
+  text-decoration: none; display: inline-block;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1200 50%, #0a0a0a 100%);
+  padding: 60px 20px 50px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(200,150,12,0.2);
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(200,150,12,0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(200,150,12,0.15);
+  border: 1px solid rgba(200,150,12,0.4);
+  color: #f0b429;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.hero h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 14px;
+  letter-spacing: -0.5px;
+}
+.hero h1 span { color: #f0b429; }
+.hero p {
+  color: rgba(255,255,255,0.65);
+  font-size: 1rem;
+  margin-bottom: 32px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+.hstat {
+  text-align: center;
+  padding: 16px 24px;
+  background: rgba(200,150,12,0.1);
+  border: 1px solid rgba(200,150,12,0.25);
+  border-radius: 12px;
+}
+.hstat-num { font-size: 1.5rem; font-weight: 800; color: #f0b429; }
+.hstat-label { font-size: 0.72rem; color: rgba(255,255,255,0.6); margin-top: 2px; font-weight: 500; }
+
+/* URGENT BANNER */
+.urgent {
+  background: linear-gradient(135deg, #c8960c, #92400e);
+  padding: 14px 20px;
+  text-align: center;
+  font-size: 0.88rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.urgent-pulse {
+  width: 10px; height: 10px;
+  background: white;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.3); }
+}
+
+/* SECTION */
+.section { max-width: 960px; margin: 0 auto; padding: 48px 16px; }
+.sec-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.sec-title span { color: #f0b429; }
+.sec-sub {
+  text-align: center;
+  color: rgba(255,255,255,0.55);
+  font-size: 0.88rem;
+  margin-bottom: 36px;
+}
+.divider {
+  width: 60px; height: 3px;
+  background: linear-gradient(90deg, #c8960c, #f0b429);
+  border-radius: 3px;
+  margin: 12px auto 32px;
+}
+
+/* PROJECT HERO CARD */
+.project-hero {
+  background: linear-gradient(135deg, #111 0%, #1a1200 100%);
+  border: 1px solid rgba(200,150,12,0.3);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+.project-hero-header {
+  background: linear-gradient(135deg, #c8960c, #92400e);
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.project-hero-header h2 { font-size: 1.4rem; font-weight: 800; }
+.project-hero-header .tag {
+  background: rgba(255,255,255,0.2);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.project-body { padding: 24px; }
+.project-desc {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+/* APARTMENT CARDS */
+.apt-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.apt-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(200,150,12,0.2);
+  border-radius: 14px;
+  padding: 20px;
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+.apt-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #c8960c, #f0b429);
+}
+.apt-card:hover {
+  background: rgba(200,150,12,0.08);
+  border-color: rgba(200,150,12,0.4);
+  transform: translateY(-2px);
+}
+.apt-type {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #f0b429;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+.apt-size { font-size: 1.1rem; font-weight: 700; margin-bottom: 2px; }
+.apt-sqft { font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-bottom: 14px; }
+.apt-price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.apt-original { font-size: 0.75rem; color: rgba(255,255,255,0.4); text-decoration: line-through; }
+.apt-discount { font-size: 0.72rem; background: #dc2626; color: white; padding: 2px 8px; border-radius: 4px; font-weight: 700; }
+.apt-final { font-size: 1.2rem; font-weight: 800; color: #f0b429; }
+.apt-payment {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.apt-pay-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+}
+.apt-pay-row .label { color: rgba(255,255,255,0.5); }
+.apt-pay-row .val { font-weight: 600; color: rgba(255,255,255,0.85); }
+.btn-inquire {
+  width: 100%;
+  background: linear-gradient(135deg, #c8960c, #f0b429);
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  color: white;
+  margin-top: 14px;
+  transition: opacity 0.2s;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+.btn-inquire:hover { opacity: 0.9; }
+
+/* FEATURES */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+.feat-item {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  padding: 14px;
+  text-align: center;
+}
+.feat-icon { font-size: 1.5rem; margin-bottom: 6px; }
+.feat-label { font-size: 0.75rem; color: rgba(255,255,255,0.65); font-weight: 600; }
+
+/* GVR SECTION */
+.gvr-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+.gvr-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(200,150,12,0.25);
+  border-radius: 14px;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+}
+.gvr-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #c8960c, #f0b429);
+}
+.gvr-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #f0b429;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+.gvr-size { font-size: 2rem; font-weight: 800; color: white; margin-bottom: 2px; }
+.gvr-desc { font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-bottom: 16px; }
+.gvr-plot { font-size: 0.78rem; color: rgba(255,255,255,0.55); margin-bottom: 16px; }
+.gvr-price { font-size: 1.4rem; font-weight: 800; color: #f0b429; margin-bottom: 16px; }
+.gvr-why {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+.gvr-why-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.7);
+}
+.gvr-why-item::before { content: '✓'; color: #f0b429; font-weight: 700; }
+
+/* WHY INVEST */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+.why-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+}
+.why-icon {
+  width: 50px; height: 50px;
+  background: rgba(200,150,12,0.15);
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.4rem;
+  margin: 0 auto 12px;
+}
+.why-title { font-size: 0.88rem; font-weight: 700; margin-bottom: 4px; }
+.why-desc { font-size: 0.75rem; color: rgba(255,255,255,0.5); line-height: 1.5; }
+
+/* CTA */
+.cta-section {
+  background: linear-gradient(135deg, #1a1200, #0a0a0a);
+  border-top: 1px solid rgba(200,150,12,0.2);
+  border-bottom: 1px solid rgba(200,150,12,0.2);
+  padding: 48px 20px;
+  text-align: center;
+}
+.cta-section h2 { font-size: 1.6rem; font-weight: 800; margin-bottom: 10px; }
+.cta-section h2 span { color: #f0b429; }
+.cta-section p { color: rgba(255,255,255,0.6); font-size: 0.9rem; margin-bottom: 28px; max-width: 500px; margin-left: auto; margin-right: auto; }
+.cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.btn-wa {
+  background: #25D366;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 28px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  text-decoration: none;
+  display: inline-block;
+  transition: opacity 0.2s;
+}
+.btn-wa:hover { opacity: 0.9; }
+.btn-call-gold {
+  background: linear-gradient(135deg, #c8960c, #f0b429);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 28px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  text-decoration: none;
+  display: inline-block;
+  transition: opacity 0.2s;
+}
+.btn-call-gold:hover { opacity: 0.9; }
+
+/* OVERSEAS */
+.overseas {
+  background: rgba(255,255,255,0.02);
+  border-radius: 16px;
+  padding: 28px;
+  border: 1px solid rgba(200,150,12,0.2);
+  margin-top: 32px;
+}
+.overseas h3 { font-size: 1.1rem; font-weight: 800; margin-bottom: 8px; }
+.overseas h3 span { color: #f0b429; }
+.overseas p { font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-bottom: 16px; line-height: 1.6; }
+.countries {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.country {
+  background: rgba(200,150,12,0.1);
+  border: 1px solid rgba(200,150,12,0.25);
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.8);
+}
+
+/* FOOTER */
+footer {
+  background: #050505;
+  border-top: 1px solid rgba(200,150,12,0.15);
+  padding: 28px 20px;
+  text-align: center;
+  color: rgba(255,255,255,0.4);
+  font-size: 0.78rem;
+}
+footer strong { color: #f0b429; }
+
+/* MODAL */
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 200;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  backdrop-filter: blur(4px);
+}
+.overlay.open { display: flex; }
+.modal {
+  background: #111;
+  border: 1px solid rgba(200,150,12,0.3);
+  border-radius: 20px;
+  padding: 28px 24px;
+  width: 100%;
+  max-width: 420px;
+  position: relative;
+}
+.modal-close {
+  position: absolute;
+  top: 14px; right: 14px;
+  background: rgba(255,255,255,0.08);
+  border: none;
+  border-radius: 50%;
+  width: 30px; height: 30px;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.modal h2 { font-size: 1.1rem; font-weight: 800; margin-bottom: 6px; }
+.modal p { font-size: 0.82rem; color: rgba(255,255,255,0.55); margin-bottom: 20px; }
+.fgroup { margin-bottom: 12px; }
+.fgroup label { display: block; font-size: 0.78rem; font-weight: 700; margin-bottom: 5px; color: rgba(255,255,255,0.7); }
+.fgroup input, .fgroup select {
+  width: 100%;
+  padding: 11px 14px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  font-size: 0.88rem;
+  font-family: inherit;
+  color: white;
+  outline: none;
+}
+.fgroup input:focus, .fgroup select:focus { border-color: #f0b429; }
+.fgroup select option { background: #111; }
+
+@media(max-width: 480px) {
+  .hero h1 { font-size: 1.5rem; }
+  .apt-grid, .gvr-grid { grid-template-columns: 1fr; }
+  .why-grid { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">
+    <div class="logo-icon">FC</div>
+    <div class="logo-text">Future <span>Consultant</span></div>
+  </div>
+  <a class="nav-contact" href="https://wa.me/923219222567" target="_blank">💬 WhatsApp Us</a>
+</nav>
+
+<!-- URGENT BANNER -->
+<div class="urgent">
+  <div class="urgent-pulse"></div>
+  🔥 LIMITED TIME OFFER — 10% Discount + FREE Furnishing — Booking Only 10 Lakh!
+  <div class="urgent-pulse"></div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">🌍 Trusted by Overseas Pakistanis Worldwide</div>
+  <h1>Invest in <span>Bahria Town Lahore</span><br>With Pakistan's Most Trusted Consultants</h1>
+  <p>Premium apartments & commercial plots. Easy installments. High returns. Verified projects.</p>
+  <div class="hero-stats">
+    <div class="hstat">
+      <div class="hstat-num">10 Lakh</div>
+      <div class="hstat-label">Booking Amount</div>
+    </div>
+    <div class="hstat">
+      <div class="hstat-num">10%</div>
+      <div class="hstat-label">Exclusive Discount</div>
+    </div>
+    <div class="hstat">
+      <div class="hstat-num">FREE</div>
+      <div class="hstat-label">Full Furnishing</div>
+    </div>
+    <div class="hstat">
+      <div class="hstat-num">25+</div>
+      <div class="hstat-label">Monthly Installments</div>
+    </div>
+  </div>
+</div>
+
+<!-- SKY SQUARE SECTION -->
+<div class="section">
+  <div class="sec-title">🏢 <span>Sky Square</span> Apartments</div>
+  <p class="sec-sub">A Complete Residential Community — Bahria Town Lahore</p>
+  <div class="divider"></div>
+
+  <div class="project-hero">
+    <div class="project-hero-header">
+      <h2>🏙️ Sky Square — Premium Living</h2>
+      <span class="tag">Bahria Town Lahore</span>
+    </div>
+    <div class="project-body">
+      <p class="project-desc">Sky Square is a landmark high-rise residential project offering fully furnished apartments with modern amenities. Ideal for investors and end-users. With flexible installment plans and an exclusive 10% discount, this is the smartest investment in Lahore today.</p>
+
+      <!-- 1 BED APARTMENTS -->
+      <h3 style="color:#f0b429; margin-bottom:16px; font-size:0.95rem;">🛏️ 1 Bedroom Apartments</h3>
+      <div class="apt-grid">
+
+        <div class="apt-card">
+          <div class="apt-type">1 Bedroom</div>
+          <div class="apt-size">467 Sqft</div>
+          <div class="apt-sqft">Compact Studio</div>
+          <div class="apt-price-row">
+            <div>
+              <div class="apt-original">PKR 9,340,000</div>
+              <div class="apt-final">PKR 8,406,000</div>
+            </div>
+            <div class="apt-discount">-10%</div>
+          </div>
+          <div class="apt-payment">
+            <div class="apt-pay-row"><span class="label">Down Payment</span><span class="val">10 Lakh</span></div>
+            <div class="apt-pay-row"><span class="label">Monthly (25)</span><span class="val">93,400/mo</span></div>
+            <div class="apt-pay-row"><span class="label">Possession</span><span class="val">14,01,000</span></div>
+          </div>
+          <a class="btn-inquire" href="https://wa.me/923219222567?text=I'm interested in Sky Square 467 sqft 1-Bed apartment" target="_blank">💬 Inquire Now</a>
+        </div>
+
+        <div class="apt-card">
+          <div class="apt-type">1 Bedroom</div>
+          <div class="apt-size">495 Sqft</div>
+          <div class="apt-sqft">Spacious Studio</div>
+          <div class="apt-price-row">
+            <div>
+              <div class="apt-original">PKR 9,900,000</div>
+              <div class="apt-final">PKR 8,910,000</div>
+            </div>
+            <div class="apt-discount">-10%</div>
+          </div>
+          <div class="apt-payment">
+            <div class="apt-pay-row"><span class="label">Down Payment</span><span class="val">10 Lakh</span></div>
+            <div class="apt-pay-row"><span class="label">Monthly (25)</span><span class="val">99,000/mo</span></div>
+            <div class="apt-pay-row"><span class="label">Possession</span><span class="val">14,85,000</span></div>
+          </div>
+          <a class="btn-inquire" href="https://wa.me/923219222567?text=I'm interested in Sky Square 495 sqft 1-Bed apartment" target="_blank">💬 Inquire Now</a>
+        </div>
+
+        <div class="apt-card">
+          <div class="apt-type">1 Bedroom</div>
+          <div class="apt-size">507 Sqft</div>
+          <div class="apt-sqft">Premium Studio</div>
+          <div class="apt-price-row">
+            <div>
+              <div class="apt-original">PKR 10,140,000</div>
+              <div class="apt-final">PKR 9,126,000</div>
+            </div>
+            <div class="apt-discount">-10%</div>
+          </div>
+          <div class="apt-payment">
+            <div class="apt-pay-row"><span class="label">Down Payment</span><span class="val">10 Lakh</span></div>
+            <div class="apt-pay-row"><span class="label">Monthly (25)</span><span class="val">1,01,400/mo</span></div>
+            <div class="apt-pay-row"><span class="label">Possession</span><span class="val">15,21,000</span></div>
+          </div>
+          <a class="btn-inquire" href="https://wa.me/923219222567?text=I'm interested in Sky Square 507 sqft 1-Bed apartment" target="_blank">💬 Inquire Now</a>
+        </div>
+
+        <div class="apt-card">
+          <div class="apt-type">1 Bedroom</div>
+          <div class="apt-size">515 Sqft</div>
+          <div class="apt-sqft">Corner Unit</div>
+          <div class="apt-price-row">
+            <div>
+              <div class="apt-original">PKR 10,300,000</div>
+              <div class="apt-final">PKR 9,270,000</div>
+            </div>
+            <div class="apt-discount">-10%</div>
+          </div>
+          <div class="apt-payment">
+            <div class="apt-pay-row"><span class="label">Down Payment</span><span class="val">10 Lakh</span></div>
+            <div class="apt-pay-row"><span class="label">Monthly (25)</span><span class="val">1,03,000/mo</span></div>
+            <div class="apt-pay-row"><span class="label">Possession</span><span class="val">15,45,000</span></div>
+          </div>
+          <a class="btn-inquire" href="https://wa.me/923219222567?text=I'm interested in Sky Square 515 sqft 1-Bed apartment" target="_blank">💬 Inquire Now</a>
+        </div>
+
+        <div class="apt-card">
+          <div class="apt-type">1 Bedroom</div>
+          <div class="apt-size">533 Sqft</div>
+          <div class="apt-sqft">High Floor</div>
+          <div class="apt-price-row">
+            <div>
+              <div class="apt-original">PKR 10,660,000</div>
+              <div class="apt-final">PKR 9,594,000</div>
+            </div>
+            <div class="apt-discount">-10%</div>
+          </div>
+          <div class="apt-payment">
+            <div class="apt-pay-row"><span class="label">Down Payment</span><span class="val">10 Lakh</span></div>
+            <div class="apt-pay-row"><span class="label">Monthly (30)</span><span class="val">1,06,600/mo</span></div>
+            <div class="apt-pay-row"><span class="label">Possession</span><span class="val">15,99,000</span></div>
+          </div>
+          <a class="btn-inquire" href="https://wa.me/923219222567?text=I'm interested in Sky Square 533 sqft 1-Bed apartment" target="_blank">💬 Inquire Now</a>
+        </div>
+
+        <div class="apt-card">
+          <div class="apt-type">1 Bedroom</div>
+          <div class="apt-size">541 Sqft</div>
+          <div class="apt-sqft">Luxury Unit</div>
+          <div class="apt-price-row">
+            <div>
+              <div class="apt-original">PKR 10,820,000</div>
+              <div class="apt-final">PKR 9,738,000</div>
+            </div>
+            <div class="apt-discount">-10%</div>
+          </div>
+          <div class="apt-payment">
+            <div class="apt-pay-row"><span class="label">Down Payment</span><span class="val">10 Lakh</span></div>
+            <div class="apt-pay-row"><span class="label">Monthly (25)</span><span class="val">1,08,200/mo</span></div>
+            <div class="apt-pay-row"><span class="label">Possession</span><span class="val">16,23,000</span></div>
+          </div>
+          <a class="btn-inquire" href="https://wa.me/923219222567?text=I'm interested in Sky Square 541 sqft 1-Bed apartment" target="_blank">💬 Inquire Now</a>
+        </div>
+      </div>
+
+      <!-- 2 BED APARTMENTS -->
+      <h3 style="color:#f0b429; margin:24px 0 16px; font-size:0.95rem;">🛏️🛏️ 2 Bedroom Apartments</h3>
+      <div class="apt-grid">
+
+        <div class="apt-card">
+          <div class="apt-type">2 Bedroom</div>
+          <div class="apt-size">795 Sqft</div>
+          <div class="apt-sqft">Family Apartment</div>
+          <div class="apt-price-row">
+            <div>
+              <div class="apt-original">PKR 15,900,000</div>
+              <div class="apt-final">PKR 14,310,000</div>
+            </div>
+            <div class="apt-discount">-10%</div>
+          </div>
+          <div class="apt-payment">
+            <div class="apt-pay-row"><span class="label">Down Payment</span><span class="val">15 Lakh</span></div>
+            <div class="apt-pay-row"><span class="label">Monthly (25)</span><span class="val">1,59,000/mo</span></div>
+            <div class="apt-pay-row"><span class="label">Possession</span><span class="val">23,85,000</span></div>
+          </div>
+          <a class="btn-inquire" href="https://wa.me/923219222567?text=I'm interested in Sky Square 795 sqft 2-Bed apartment" target="_blank">💬 Inquire Now</a>
+        </div>
+
+        <div class="apt-card">
+          <div class="apt-type">2 Bedroom</div>
+          <div class="apt-size">841 Sqft</div>
+          <div class="apt-sqft">Spacious Family</div>
+          <div class="apt-price-row">
+            <div>
+              <div class="apt-original">PKR 16,820,000</div>
+              <div class="apt-final">PKR 15,138,000</div>
+            </div>
+            <div class="apt-discount">-10%</div>
+          </div>
+          <div class="apt-payment">
+            <div class="apt-pay-row"><span class="label">Down Payment</span><span class="val">15 Lakh</span></div>
+            <div class="apt-pay-row"><span class="label">Monthly (25)</span><span class="val">1,68,200/mo</span></div>
+            <div class="apt-pay-row"><span class="label">Possession</span><span class="val">25,23,000</span></div>
+          </div>
+          <a class="btn-inquire" href="https://wa.me/923219222567?text=I'm interested in Sky Square 841 sqft 2-Bed apartment" target="_blank">💬 Inquire Now</a>
+        </div>
+
+        <div class="apt-card">
+          <div class="apt-type">2 Bedroom</div>
+          <div class="apt-size">846 Sqft</div>
+          <div class="apt-sqft">Premium Family</div>
+          <div class="apt-price-row">
+            <div>
+              <div class="apt-original">PKR 16,920,000</div>
+              <div class="apt-final">PKR 15,228,000</div>
+            </div>
+            <div class="apt-discount">-10%</div>
+          </div>
+          <div class="apt-payment">
+            <div class="apt-pay-row"><span class="label">Down Payment</span><span class="val">15 Lakh</span></div>
+            <div class="apt-pay-row"><span class="label">Monthly (25)</span><span class="val">1,69,200/mo</span></div>
+            <div class="apt-pay-row"><span class="label">Possession</span><span class="val">25,38,000</span></div>
+          </div>
+          <a class="btn-inquire" href="https://wa.me/923219222567?text=I'm interested in Sky Square 846 sqft 2-Bed apartment" target="_blank">💬 Inquire Now</a>
+        </div>
+      </div>
+
+      <!-- AMENITIES -->
+      <h3 style="color:#f0b429; margin:24px 0 16px; font-size:0.95rem;">✨ Amenities & Features</h3>
+      <div class="features-grid">
+        <div class="feat-item"><div class="feat-icon">🛋️</div><div class="feat-label">Fully Furnished</div></div>
+        <div class="feat-item"><div class="feat-icon">🏊</div><div class="feat-label">Swimming Pool</div></div>
+        <div class="feat-item"><div class="feat-icon">🏋️</div><div class="feat-label">Gymnasium</div></div>
+        <div class="feat-item"><div class="feat-icon">🔒</div><div class="feat-label">24/7 Security</div></div>
+        <div class="feat-item"><div class="feat-icon">🅿️</div><div class="feat-label">Parking</div></div>
+        <div class="feat-item"><div class="feat-icon">⚡</div><div class="feat-label">Backup Power</div></div>
+        <div class="feat-item"><div class="feat-icon">🛗</div><div class="feat-label">Elevators</div></div>
+        <div class="feat-item"><div class="feat-icon">🌿</div><div class="feat-label">Green Spaces</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GVR-1 SECTION -->
+<div style="background: rgba(200,150,12,0.04); border-top: 1px solid rgba(200,150,12,0.15); border-bottom: 1px solid rgba(200,150,12,0.15);">
+  <div class="section">
+    <div class="sec-title">🏗️ <span>GVR-1 Commercial</span> Investment</div>
+    <p class="sec-sub">Prime Commercial Plots — Bahria Town Lahore | The Smart Move for a Secure Future</p>
+    <div class="divider"></div>
+
+    <div class="gvr-grid">
+      <div class="gvr-card">
+        <div class="gvr-label">GVR-1 Commercial</div>
+        <div class="gvr-size">8 Marla</div>
+        <div class="gvr-desc">Pair Corner + Next to Corner</div>
+        <div class="gvr-plot">📍 Plot No. 73 & 74</div>
+        <div class="gvr-price">@ PKR 9 Crore</div>
+        <div class="gvr-why">
+          <div class="gvr-why-item">Prime corner location</div>
+          <div class="gvr-why-item">High visibility & footfall</div>
+          <div class="gvr-why-item">Commercial hub of the future</div>
+          <div class="gvr-why-item">High return on investment</div>
+        </div>
+        <a class="btn-inquire" href="https://wa.me/923219222567?text=I'm interested in GVR-1 Commercial 8 Marla Plot" target="_blank">💬 Inquire Now</a>
+      </div>
+
+      <div class="gvr-card">
+        <div class="gvr-label">GVR-1 Commercial</div>
+        <div class="gvr-size">1 Kanal</div>
+        <div class="gvr-desc">Pair — Premium Commercial</div>
+        <div class="gvr-plot">📍 Bahria Town Lahore</div>
+        <div class="gvr-price">@ PKR 18 Crore</div>
+        <div class="gvr-why">
+          <div class="gvr-why-item">Largest commercial pair available</div>
+          <div class="gvr-why-item">Secure & profitable investment</div>
+          <div class="gvr-why-item">Ideal for investors & end users</div>
+          <div class="gvr-why-item">Maximum ROI potential</div>
+        </div>
+        <a class="btn-inquire" href="https://wa.me/923219222567?text=I'm interested in GVR-1 Commercial 1 Kanal Plot" target="_blank">💬 Inquire Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WHY INVEST -->
+<div class="section">
+  <div class="sec-title">💡 Why Invest With <span>Future Consultant?</span></div>
+  <div class="divider"></div>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-icon">🏆</div>
+      <div class="why-title">Trusted Professionals</div>
+      <div class="why-desc">Years of experience serving local and overseas Pakistani investors</div>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">📈</div>
+      <div class="why-title">High ROI</div>
+      <div class="why-desc">Bahria Town properties offer best returns in Pakistan real estate</div>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">🔒</div>
+      <div class="why-title">Secure Investment</div>
+      <div class="why-desc">All projects are verified, legal and fully documented</div>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">💳</div>
+      <div class="why-title">Easy Installments</div>
+      <div class="why-desc">Flexible payment plans starting from just 10 Lakh booking</div>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">🌍</div>
+      <div class="why-title">Overseas Friendly</div>
+      <div class="why-desc">Full support for overseas Pakistanis — remote booking available</div>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">🛋️</div>
+      <div class="why-title">Free Furnishing</div>
+      <div class="why-desc">Get fully furnished apartment at no extra cost — limited time offer</div>
+    </div>
+  </div>
+
+  <!-- OVERSEAS SECTION -->
+  <div class="overseas">
+    <h3>🌍 Special Message for <span>Overseas Pakistanis</span></h3>
+    <p>Wherever you are in the world — invest safely in Pakistan's most trusted real estate. We handle everything remotely. Full legal documentation, transparent process, and dedicated support for overseas investors.</p>
+    <div class="countries">
+      <span class="country">🇸🇦 Saudi Arabia</span>
+      <span class="country">🇦🇪 UAE</span>
+      <span class="country">🇬🇧 UK</span>
+      <span class="country">🇺🇸 USA</span>
+      <span class="country">🇨🇦 Canada</span>
+      <span class="country">🇶🇦 Qatar</span>
+      <span class="country">🇦🇺 Australia</span>
+      <span class="country">🇩🇪 Germany</span>
+      <span class="country">🇮🇹 Italy</span>
+      <span class="country">🇪🇸 Spain</span>
+      <span class="country">🇳🇱 Netherlands</span>
+      <span class="country">🇰🇼 Kuwait</span>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-section">
+  <h2>Ready to <span>Invest?</span></h2>
+  <p>Contact us today for a free consultation. Limited units available — act now before prices increase!</p>
+  <div class="cta-btns">
+    <a class="btn-wa" href="https://wa.me/923219222567?text=I want to invest in Sky Square or GVR-1. Please send details." target="_blank">💬 WhatsApp Now</a>
+    <a class="btn-call-gold" href="tel:+923219222567">📞 Call Now</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div style="margin-bottom:6px;">🏠 <strong>Future Consultant</strong> — Best Property Professionals</div>
+  <div>Bahria Town Lahore | Sky Square | GVR-1 Commercial</div>
+  <div style="margin-top:8px;">© 2024 Future Consultant. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
